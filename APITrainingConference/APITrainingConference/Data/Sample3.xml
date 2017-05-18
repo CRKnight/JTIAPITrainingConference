@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoreFilingMessage>
+	<DocumentFiledDate>
+		<DateTime>2017-03-21T10:00:38.0Z</DateTime>
+	</DocumentFiledDate>
+	<Case>
+		<CaseDocketID>17-CV-889</CaseDocketID>
+		<CaseTypeText>DCOCO</CaseTypeText>
+		<CaseParticipant>
+			<CaseParticipantRoleCode>PLA</CaseParticipantRoleCode>
+			<EntityPerson>
+				<PersonName>
+					<PersonGivenName>Peter</PersonGivenName>
+					<PersonMiddleName/>
+					<PersonSurName>Wiggin</PersonSurName>
+					<PersonNameSuffixText/>
+				</PersonName>
+				<ContactInformation>
+					<TelephoneNumber>5555559988</TelephoneNumber>
+					<Email>pwiggin@hegemon.war</Email>
+					<MailingAddress>
+						<LocationStreet>350 5th Ave</LocationStreet>
+						<AddressSecondaryUnitText />
+						<LocationCityName>New York</LocationCityName>
+						<LocationStateName>NY</LocationStateName>
+						<LocationPostalCode>10118</LocationPostalCode>
+					</MailingAddress>
+				</ContactInformation>
+			</EntityPerson>			
+		</CaseParticipant>
+		<CaseParticipant>
+			<CaseParticipantRoleCode>DEF</CaseParticipantRoleCode>
+			<EntityPerson>
+				<PersonName>
+					<PersonGivenName>Andrew</PersonGivenName>
+					<PersonMiddleName />
+					<PersonSurName>Wiggin</PersonSurName>
+					<PersonNameSuffixText/>
+				</PersonName>
+				<PersonOtherIdentification>
+					<IdentificationID>9a0d5595-4e3d-4566-8af4-74728acc6017</IdentificationID>
+					<IdentificationCategoryText>CMSID</IdentificationCategoryText>
+				</PersonOtherIdentification>
+				<PersonOtherIdentification>
+					<IdentificationID>252b0331-74de-4e21-bae2-e8ffe746a672</IdentificationID>
+					<IdentificationCategoryText>CASEPARTYID</IdentificationCategoryText>
+				</PersonOtherIdentification>
+				<ContactInformation>
+					<TelephoneNumber>5555551112</TelephoneNumber>
+					<Email>awiggin@xenocide.de</Email>
+					<MailingAddress>
+						<LocationStreet>23825 Stuart Ranch Road</LocationStreet>
+						<AddressSecondaryUnitText />
+						<LocationCityName>Malibu</LocationCityName>
+						<LocationStateName>CA</LocationStateName>
+						<LocationPostalCode>90265-4861</LocationPostalCode>
+					</MailingAddress>
+				</ContactInformation>
+			</EntityPerson>
+		</CaseParticipant>
+		<CaseParticipant>
+			<CaseParticipantRoleCode>ATTY</CaseParticipantRoleCode>
+			<EntityPerson>
+				<PersonName>
+					<PersonGivenName>Valentine</PersonGivenName>
+					<PersonMiddleName/>
+					<PersonSurName>Wiggin</PersonSurName>
+				</PersonName>
+				<PersonOtherIdentification>
+					<IdentificationID>8832992</IdentificationID>
+					<IdentificationCategoryText>BAR</IdentificationCategoryText>
+				</PersonOtherIdentification>
+				<ContactInformation>
+					<TelephoneNumber>5555558442</TelephoneNumber>
+					<Email>vwiggin@newworld.gov</Email>
+					<MailingAddress>
+						<LocationStreet>P.O. Box 944255</LocationStreet>
+						<AddressSecondaryUnitText />
+						<LocationCityName>Sacramento</LocationCityName>
+						<LocationStateName>CA</LocationStateName>
+						<LocationPostalCode>94244-2550</LocationPostalCode>
+					</MailingAddress>
+				</ContactInformation>
+			</EntityPerson>
+		</CaseParticipant>
+	</Case>
+	<FilingLeadDocument>
+		<DocumentIdentification>
+			<IdentificationID>8988e5b9-d3e1-48a5-abfe-75733a01637c</IdentificationID>
+			<IdentificationCategoryText>FILINGID</IdentificationCategoryText>
+		</DocumentIdentification>
+		<DocumentMetadata>
+			<RegisterActionDescriptionText>CV10</RegisterActionDescriptionText>
+			<FilerIdentification>
+				<IdentificationID>8832992</IdentificationID>
+				<IdentificationCategoryText>BAR</IdentificationCategoryText>
+			</FilerIdentification>
+		</DocumentMetadata>
+		<DocumentAttachment>
+			<BinaryDescriptionText>Additional Filing.pdf</BinaryDescriptionText>
+			<BinaryLocationURI>8988e5b9-d3e1-48a5-abfe-75733a01637c_0.pdf</BinaryLocationURI>
+			<BinaryCategoryText>LEAD</BinaryCategoryText>
+		</DocumentAttachment>
+		<FilingCommentsText/>
+	</FilingLeadDocument>
+</CoreFilingMessage>

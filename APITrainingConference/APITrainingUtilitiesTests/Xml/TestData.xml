@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CoreFilingMessage>
+	<DocumentFiledDate>
+		<DateTime>2017-01-01T00:00:00.0Z</DateTime>
+	</DocumentFiledDate>
+	<Case>
+		<CaseDocketID>TESTDOCKETID</CaseDocketID>
+		<CaseTypeText>TESTCASETYPE</CaseTypeText>
+		<CaseParticipant>
+			<CaseParticipantRoleCode>TST</CaseParticipantRoleCode>
+			<EntityPerson>
+				<PersonName>
+					<PersonGivenName>TESTGIVEN</PersonGivenName>
+					<PersonMiddleName>TESTMIDDLE</PersonMiddleName>
+					<PersonSurName>TESTSUR</PersonSurName>
+					<PersonNameSuffixText>TESTSUFFIX</PersonNameSuffixText>
+				</PersonName>
+				<PersonOtherIdentification>
+					<IdentificationID>TESTID</IdentificationID>
+					<IdentificationCategoryText>TESTCATEGORY</IdentificationCategoryText>
+				</PersonOtherIdentification>
+				<PersonOtherIdentification>
+					<IdentificationID/>
+					<IdentificationCategoryText/>
+				</PersonOtherIdentification>
+				<ContactInformation>
+					<TelephoneNumber>(123)456-7890</TelephoneNumber>
+					<Email>test@test.com</Email>
+					<MailingAddress>
+						<LocationStreet>TEST STREET</LocationStreet>
+						<AddressSecondaryUnitText>TEST SECONDARY</AddressSecondaryUnitText>
+						<LocationCityName>TEST CITY</LocationCityName>
+						<LocationStateName>TEST STATE</LocationStateName>
+						<LocationPostalCode>TEST ZIP</LocationPostalCode>
+					</MailingAddress>
+				</ContactInformation>
+			</EntityPerson>
+		</CaseParticipant>
+		<CaseParticipant>
+			<CaseParticipantRoleCode />
+			<EntityPerson>
+				<PersonName>
+					<PersonGivenName />
+					<PersonMiddleName/>
+					<PersonSurName />
+					<PersonNameSuffixText/>
+				</PersonName>
+				<ContactInformation>
+					<TelephoneNumber />
+					<Email />
+					<MailingAddress>
+						<LocationStreet />
+						<AddressSecondaryUnitText />
+						<LocationCityName />
+						<LocationStateName />
+						<LocationPostalCode />
+					</MailingAddress>
+				</ContactInformation>
+			</EntityPerson>
+		</CaseParticipant>
+		<CaseParticipant>
+			<CaseParticipantRoleCode />
+			<EntityPerson>
+				<PersonName>
+					<PersonGivenName />
+					<PersonMiddleName/>
+					<PersonSurName />
+					<PersonNameSuffixText/>
+				</PersonName>
+				<PersonOtherIdentification>
+					<IdentificationID/>
+					<IdentificationCategoryText/>
+				</PersonOtherIdentification>
+				<PersonOtherIdentification>
+					<IdentificationID/>
+					<IdentificationCategoryText/>
+				</PersonOtherIdentification>
+				<ContactInformation>
+					<TelephoneNumber />
+					<Email />
+					<MailingAddress>
+						<LocationStreet />
+						<AddressSecondaryUnitText />
+						<LocationCityName />
+						<LocationStateName />
+						<LocationPostalCode />
+					</MailingAddress>
+				</ContactInformation>
+			</EntityPerson>
+		</CaseParticipant>
+	</Case>
+	<FilingLeadDocument>
+		<DocumentIdentification>
+			<IdentificationID>TEST DOC ID</IdentificationID>
+			<IdentificationCategoryText>DOC ID</IdentificationCategoryText>
+		</DocumentIdentification>
+		<DocumentMetadata>
+			<RegisterActionDescriptionText>TST1</RegisterActionDescriptionText>
+			<FilerIdentification>
+				<IdentificationID>FILER ID</IdentificationID>
+				<IdentificationCategoryText>ATTORNEYID</IdentificationCategoryText>
+			</FilerIdentification>
+		</DocumentMetadata>
+		<DocumentAttachment>
+			<BinaryDescriptionText>test.pdf</BinaryDescriptionText>
+			<BinaryLocationURI>abc.pdf</BinaryLocationURI>
+			<BinaryCategoryText>LEAD</BinaryCategoryText>
+		</DocumentAttachment>
+		<FilingCommentsText/>
+	</FilingLeadDocument>
+</CoreFilingMessage>

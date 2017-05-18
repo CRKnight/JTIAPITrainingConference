@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoreFilingMessage>
+	<DocumentFiledDate>
+		<DateTime>2017-03-21T10:00:38.0Z</DateTime>
+	</DocumentFiledDate>
+	<Case>
+		<CaseDocketID>17-CV-232</CaseDocketID>
+		<CaseTypeText>DCOCO</CaseTypeText>
+		<CaseParticipant>
+			<CaseParticipantRoleCode>PLA</CaseParticipantRoleCode>
+			<EntityPerson>
+				<PersonName>
+					<PersonGivenName>Mickey</PersonGivenName>
+					<PersonMiddleName/>
+					<PersonSurName>Mouse</PersonSurName>
+					<PersonNameSuffixText/>
+				</PersonName>
+				<ContactInformation>
+					<TelephoneNumber>5555551988</TelephoneNumber>
+					<Email>mmouse@disney.com</Email>
+					<MailingAddress>
+						<LocationStreet>500 South Buena Vista Street</LocationStreet>
+						<AddressSecondaryUnitText />
+						<LocationCityName>Burbank</LocationCityName>
+						<LocationStateName>CA</LocationStateName>
+						<LocationPostalCode>91521</LocationPostalCode>
+					</MailingAddress>
+				</ContactInformation>
+			</EntityPerson>			
+		</CaseParticipant>
+		<CaseParticipant>
+			<CaseParticipantRoleCode>DEF</CaseParticipantRoleCode>
+			<EntityPerson>
+				<PersonName>
+					<PersonGivenName>Donald</PersonGivenName>
+					<PersonMiddleName>Fauntleroy</PersonMiddleName>
+					<PersonSurName>Duck</PersonSurName>
+					<PersonNameSuffixText/>
+				</PersonName>
+				<PersonOtherIdentification>
+					<IdentificationID>793f3c08-49cb-47cd-8cde-ae33d417c33f</IdentificationID>
+					<IdentificationCategoryText>CMSID</IdentificationCategoryText>
+				</PersonOtherIdentification>
+				<PersonOtherIdentification>
+					<IdentificationID>b4be60b1-a0e7-4ff5-b4ab-d51748c2c78f</IdentificationID>
+					<IdentificationCategoryText>CASEPARTYID</IdentificationCategoryText>
+				</PersonOtherIdentification>
+				<ContactInformation>
+					<TelephoneNumber>5555550832</TelephoneNumber>
+					<Email>dduck@disney.com</Email>
+					<MailingAddress>
+						<LocationStreet>500 South Buena Vista Street</LocationStreet>
+						<AddressSecondaryUnitText />
+						<LocationCityName>Burbank</LocationCityName>
+						<LocationStateName>CA</LocationStateName>
+						<LocationPostalCode>91521</LocationPostalCode>
+					</MailingAddress>
+				</ContactInformation>
+			</EntityPerson>
+		</CaseParticipant>
+		<CaseParticipant>
+			<CaseParticipantRoleCode>ATTY</CaseParticipantRoleCode>
+			<EntityPerson>
+				<PersonName>
+					<PersonGivenName>Barbara</PersonGivenName>
+					<PersonMiddleName>Mary</PersonMiddleName>
+					<PersonSurName>Young</PersonSurName>
+				</PersonName>
+				<PersonOtherIdentification>
+					<IdentificationID>22171800</IdentificationID>
+					<IdentificationCategoryText>BAR</IdentificationCategoryText>
+				</PersonOtherIdentification>
+				<ContactInformation>
+					<TelephoneNumber>5555550023</TelephoneNumber>
+					<Email>byoung@notarealaddress.com</Email>
+					<MailingAddress>
+						<LocationStreet>96 South Street</LocationStreet>
+						<AddressSecondaryUnitText />
+						<LocationCityName>Providence</LocationCityName>
+						<LocationStateName>UT</LocationStateName>
+						<LocationPostalCode>84332</LocationPostalCode>
+					</MailingAddress>
+				</ContactInformation>
+			</EntityPerson>
+		</CaseParticipant>
+	</Case>
+	<FilingLeadDocument>
+		<DocumentIdentification>
+			<IdentificationID>3f024524-0797-494d-8261-7a8ab4d3fac6</IdentificationID>
+			<IdentificationCategoryText>FILINGID</IdentificationCategoryText>
+		</DocumentIdentification>
+		<DocumentMetadata>
+			<RegisterActionDescriptionText>CV10</RegisterActionDescriptionText>
+			<FilerIdentification>
+				<IdentificationID>22171800</IdentificationID>
+				<IdentificationCategoryText>BAR</IdentificationCategoryText>
+			</FilerIdentification>
+		</DocumentMetadata>
+		<DocumentAttachment>
+			<BinaryDescriptionText>Additional Filing.pdf</BinaryDescriptionText>
+			<BinaryLocationURI>3f024524-0797-494d-8261-7a8ab4d3fac6_0.pdf</BinaryLocationURI>
+			<BinaryCategoryText>LEAD</BinaryCategoryText>
+		</DocumentAttachment>
+		<FilingCommentsText/>
+	</FilingLeadDocument>
+</CoreFilingMessage>
