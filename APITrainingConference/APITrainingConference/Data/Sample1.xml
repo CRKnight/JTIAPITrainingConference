@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoreFilingMessage>
+	<DocumentFiledDate>
+		<DateTime>2017-01-31T19:48:38.0Z</DateTime>
+	</DocumentFiledDate>
+	<Case>
+		<CaseDocketID>17-CV-299</CaseDocketID>
+		<CaseTypeText>DCOCO</CaseTypeText>
+		<CaseParticipant>
+			<CaseParticipantRoleCode>PLA</CaseParticipantRoleCode>
+			<EntityPerson>
+				<PersonName>
+					<PersonGivenName>John</PersonGivenName>
+					<PersonMiddleName/>
+					<PersonSurName>Smith</PersonSurName>
+					<PersonNameSuffixText/>
+				</PersonName>
+				<ContactInformation>
+					<TelephoneNumber>5555551233</TelephoneNumber>
+					<Email>jsmith@notarealaddress.com</Email>
+					<MailingAddress>
+						<LocationStreet>123 Street</LocationStreet>
+						<AddressSecondaryUnitText />
+						<LocationCityName>Logan</LocationCityName>
+						<LocationStateName>UT</LocationStateName>
+						<LocationPostalCode>84321</LocationPostalCode>
+					</MailingAddress>
+				</ContactInformation>
+			</EntityPerson>			
+		</CaseParticipant>
+		<CaseParticipant>
+			<CaseParticipantRoleCode>DEF</CaseParticipantRoleCode>
+			<EntityPerson>
+				<PersonName>
+					<PersonGivenName>Bill</PersonGivenName>
+					<PersonMiddleName>Theodore</PersonMiddleName>
+					<PersonSurName>Smith</PersonSurName>
+					<PersonNameSuffixText/>
+				</PersonName>
+				<PersonOtherIdentification>
+					<IdentificationID>357ca247-effd-471e-b40e-7edcbae3260a</IdentificationID>
+					<IdentificationCategoryText>CMSID</IdentificationCategoryText>
+				</PersonOtherIdentification>
+				<PersonOtherIdentification>
+					<IdentificationID>a3bcea9b-749e-4f77-907c-0fb6b6e23079</IdentificationID>
+					<IdentificationCategoryText>CASEPARTYID</IdentificationCategoryText>
+				</PersonOtherIdentification>
+				<ContactInformation>
+					<TelephoneNumber>5555558992</TelephoneNumber>
+					<Email>bsmith@notarealaddress.com</Email>
+					<MailingAddress>
+						<LocationStreet>345 Street</LocationStreet>
+						<AddressSecondaryUnitText>Apt #4</AddressSecondaryUnitText>
+						<LocationCityName>Price</LocationCityName>
+						<LocationStateName>UT</LocationStateName>
+						<LocationPostalCode>84501</LocationPostalCode>
+					</MailingAddress>
+				</ContactInformation>
+			</EntityPerson>
+		</CaseParticipant>
+		<CaseParticipant>
+			<CaseParticipantRoleCode>ATTY</CaseParticipantRoleCode>
+			<EntityPerson>
+				<PersonName>
+					<PersonGivenName>Barbara</PersonGivenName>
+					<PersonMiddleName/>
+					<PersonSurName>Young</PersonSurName>
+				</PersonName>
+				<PersonOtherIdentification>
+					<IdentificationID>80569bfb-a7c9-4dda-a531-5f8026ac0ac4</IdentificationID>
+					<IdentificationCategoryText>ATTORNEYID</IdentificationCategoryText>
+				</PersonOtherIdentification>
+				<PersonOtherIdentification>
+					<IdentificationID>22171800</IdentificationID>
+					<IdentificationCategoryText>BAR</IdentificationCategoryText>
+				</PersonOtherIdentification>
+				<ContactInformation>
+					<TelephoneNumber />
+					<Email>byoung@notarealaddress.com</Email>
+					<MailingAddress>
+						<LocationStreet>96 South Street</LocationStreet>
+						<AddressSecondaryUnitText />
+						<LocationCityName>Providence</LocationCityName>
+						<LocationStateName>UT</LocationStateName>
+						<LocationPostalCode>84332</LocationPostalCode>
+					</MailingAddress>
+				</ContactInformation>
+			</EntityPerson>
+		</CaseParticipant>
+	</Case>
+	<FilingLeadDocument>
+		<DocumentIdentification>
+			<IdentificationID>3b29e9f4-feba-4c70-ad31-f30c9a37733e</IdentificationID>
+			<IdentificationCategoryText>FILINGID</IdentificationCategoryText>
+		</DocumentIdentification>
+		<DocumentMetadata>
+			<RegisterActionDescriptionText>CV10</RegisterActionDescriptionText>
+			<FilerIdentification>
+				<IdentificationID>80569bfb-a7c9-4dda-a531-5f8026ac0ac4</IdentificationID>
+				<IdentificationCategoryText>ATTORNEYID</IdentificationCategoryText>
+			</FilerIdentification>
+		</DocumentMetadata>
+		<DocumentAttachment>
+			<BinaryDescriptionText>Additional Filing.pdf</BinaryDescriptionText>
+			<BinaryLocationURI>3b29e9f4-feba-4c70-ad31-f30c9a37733e_0.pdf</BinaryLocationURI>
+			<BinaryCategoryText>LEAD</BinaryCategoryText>
+		</DocumentAttachment>
+		<FilingCommentsText/>
+	</FilingLeadDocument>
+</CoreFilingMessage>
