@@ -1,0 +1,2 @@
+C:\git\grimes-efiling\APITrainingConference\APITrainingConference\bin\Debug\APITrainingConference.exe.config
+C:\git\TrainingConference\JTIAPITrainingConference\APITrainingConference\APITrainingConference\bin\Debug\APITrainingConference.exe.config

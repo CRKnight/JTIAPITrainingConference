@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordFilingRequestMessage xmlns="urn:oasis:names:tc:legalxml-courtfiling:wsdl:WebServicesProfile-Definitions-4.0">
+  <RecordDocketingMessage xmlns="urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:RecordDocketingMessage-4.0" xmlns:tyler="urn:ecf:extensions:Common" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecf="urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:CommonTypes-4.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:s="http://niem.gov/niem/structures/2.0">
+    <ReviewedLeadDocument>
+      <nc:DocumentDescriptionText></nc:DocumentDescriptionText>
+      <nc:DocumentIdentification>
+        <nc:IdentificationID>3b29e9f4-feba-4c70-ad31-f30c9a37733e</nc:IdentificationID>
+      </nc:DocumentIdentification>
+      <ecf:DocumentMetadata>
+        <j:RegisterActionDescriptionText>CV10</j:RegisterActionDescriptionText>
+        <ecf:FilingAttorneyID />
+        <ecf:FilingPartyID />
+      </ecf:DocumentMetadata>
+      <ecf:DocumentRendition>
+        <ecf:DocumentRenditionMetadata>
+          <ecf:DocumentAttachment>
+            <nc:BinaryDescriptionText>Additional Filing.pdf</nc:BinaryDescriptionText>
+            <nc:BinaryCategoryText>LEAD</nc:BinaryCategoryText>
+            <ecf:AttachmentSequenceID>0</ecf:AttachmentSequenceID>
+          </ecf:DocumentAttachment>
+        </ecf:DocumentRenditionMetadata>
+      </ecf:DocumentRendition>
+      <WaiverIndicator>true</WaiverIndicator>
+    </ReviewedLeadDocument>
+  </RecordDocketingMessage>
+  <CoreFilingMessage xmlns="urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:CoreFilingMessage-4.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecf="urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:CommonTypes-4.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:tyler="urn:ecf:extensions:Common" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <nc:DocumentFiledDate>
+      <nc:DateTime>2017-01-31T19:48:38.0Z</nc:DateTime>
+    </nc:DocumentFiledDate>
+    <nc:DocumentIdentification>
+      <nc:IdentificationID>164745</nc:IdentificationID>
+      <nc:IdentificationCategoryText>ENVELOPEID</nc:IdentificationCategoryText>
+    </nc:DocumentIdentification>
+    <nc:DocumentIdentification>
+      <nc:IdentificationID>OFS</nc:IdentificationID>
+      <nc:IdentificationCategoryText>EFSPNAME</nc:IdentificationCategoryText>
+    </nc:DocumentIdentification>
+    <civil:CivilCase xmlns:civil="urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:CivilCase-4.0">
+      <nc:CaseDocketID>TSTATTACHMENTS123</nc:CaseDocketID>
+      <CaseAugmentation>
+        <ecf:CaseOtherEntityAttorney>
+          <nc:RoleOfPersonReference s:ref="Attorney1" />
+          <j:JudicialOfficialBarMembership>
+            <j:JudicialOfficialBarIdentification>
+              <nc:IdentificationID>22171800</nc:IdentificationID>
+            </j:JudicialOfficialBarIdentification>
+          </j:JudicialOfficialBarMembership>
+        </ecf:CaseOtherEntityAttorney>
+        <ecf:CaseParticipant>
+          <ecf:EntityPerson s:id="Party1">
+            <nc:PersonName>
+              <nc:PersonGivenName>John</nc:PersonGivenName>
+              <nc:PersonMiddleName></nc:PersonMiddleName>
+              <nc:PersonSurName>Smith</nc:PersonSurName>
+              <nc:PersonNameSuffixText></nc:PersonNameSuffixText>
+            </nc:PersonName>
+            <ecf:PersonAugmentation>
+              <nc:ContactInformation>
+                <nc:ContactTelephoneNumber>
+                  <nc:FullTelephoneNumber>
+                    <nc:TelephoneNumberFullID></nc:TelephoneNumberFullID>
+                  </nc:FullTelephoneNumber>
+                </nc:ContactTelephoneNumber>
+                <nc:ContactEmailID></nc:ContactEmailID>
+                <nc:ContactMailingAddress>
+                  <nc:StructuredAddress>
+                    <nc:LocationStreet>
+                      <nc:StreetFullText />
+                    </nc:LocationStreet>
+                    <nc:AddressSecondaryUnitText />
+                    <nc:LocationCityName />
+                    <nc:LocationStateName />
+                    <nc:LocationCountryFIPS10-4Code>US</nc:LocationCountryFIPS10-4Code>
+                    <nc:LocationPostalCode />
+                  </nc:StructuredAddress>
+                </nc:ContactMailingAddress>
+              </nc:ContactInformation>
+            </ecf:PersonAugmentation>
+          </ecf:EntityPerson>
+          <ecf:CaseParticipantRoleCode>PLA</ecf:CaseParticipantRoleCode>
+        </ecf:CaseParticipant>
+        <ecf:CaseParticipant>
+          <ecf:EntityPerson s:id="Party2">
+            <nc:PersonName>
+              <nc:PersonGivenName>Bill</nc:PersonGivenName>
+              <nc:PersonMiddleName></nc:PersonMiddleName>
+              <nc:PersonSurName>Smith</nc:PersonSurName>
+              <nc:PersonNameSuffixText></nc:PersonNameSuffixText>
+            </nc:PersonName>
+            <nc:PersonOtherIdentification>
+              <nc:IdentificationID>357ca247-effd-471e-b40e-7edcbae3260a</nc:IdentificationID>
+              <nc:IdentificationCategoryText>CMSID</nc:IdentificationCategoryText>
+            </nc:PersonOtherIdentification>
+            <nc:PersonOtherIdentification>
+              <nc:IdentificationID>a3bcea9b-749e-4f77-907c-0fb6b6e23079</nc:IdentificationID>
+              <nc:IdentificationCategoryText>CASEPARTYID</nc:IdentificationCategoryText>
+            </nc:PersonOtherIdentification>
+            <ecf:PersonAugmentation>
+              <nc:ContactInformation>
+                <nc:ContactTelephoneNumber>
+                  <nc:FullTelephoneNumber>
+                    <nc:TelephoneNumberFullID></nc:TelephoneNumberFullID>
+                  </nc:FullTelephoneNumber>
+                </nc:ContactTelephoneNumber>
+                <nc:ContactEmailID></nc:ContactEmailID>
+                <nc:ContactMailingAddress>
+                  <nc:StructuredAddress>
+                    <nc:LocationStreet>
+                      <nc:StreetFullText />
+                    </nc:LocationStreet>
+                    <nc:AddressSecondaryUnitText />
+                    <nc:LocationCityName />
+                    <nc:LocationStateName />
+                    <nc:LocationCountryFIPS10-4Code>US</nc:LocationCountryFIPS10-4Code>
+                    <nc:LocationPostalCode />
+                  </nc:StructuredAddress>
+                </nc:ContactMailingAddress>
+              </nc:ContactInformation>
+            </ecf:PersonAugmentation>
+          </ecf:EntityPerson>
+          <ecf:CaseParticipantRoleCode>DEF</ecf:CaseParticipantRoleCode>
+        </ecf:CaseParticipant>
+        <ecf:CaseParticipant>
+          <ecf:EntityPerson s:id="Attorney1">
+            <nc:PersonName>
+              <nc:PersonGivenName>Barbara</nc:PersonGivenName>
+              <nc:PersonMiddleName></nc:PersonMiddleName>
+              <nc:PersonSurName>Young</nc:PersonSurName>
+            </nc:PersonName>
+            <nc:PersonOtherIdentification>
+              <nc:IdentificationID>80569bfb-a7c9-4dda-a531-5f8026ac0ac4</nc:IdentificationID>
+              <nc:IdentificationCategoryText>ATTORNEYID</nc:IdentificationCategoryText>
+            </nc:PersonOtherIdentification>
+            <ecf:PersonAugmentation>
+              <nc:ContactInformation>
+                <nc:ContactTelephoneNumber>
+                  <nc:FullTelephoneNumber>
+                    <nc:TelephoneNumberFullID />
+                  </nc:FullTelephoneNumber>
+                </nc:ContactTelephoneNumber>
+                <nc:ContactEmailID />
+                <nc:ContactMailingAddress>
+                  <nc:StructuredAddress>
+                    <nc:LocationStreet>
+                      <nc:StreetFullText />
+                    </nc:LocationStreet>
+                    <nc:AddressSecondaryUnitText />
+                    <nc:LocationCityName />
+                    <nc:LocationStateName />
+                    <nc:LocationCountryFIPS10-4Code>US</nc:LocationCountryFIPS10-4Code>
+                    <nc:LocationPostalCode />
+                  </nc:StructuredAddress>
+                </nc:ContactMailingAddress>
+              </nc:ContactInformation>
+            </ecf:PersonAugmentation>
+          </ecf:EntityPerson>
+          <ecf:CaseParticipantRoleCode>ATTY</ecf:CaseParticipantRoleCode>
+        </ecf:CaseParticipant>
+        <CaseTypeText>DCOCO</CaseTypeText>
+      </CaseAugmentation>
+      <civil:ReliefTypeCode />
+    </civil:CivilCase>
+    <FilingLeadDocument s:id="Filing0">
+      <nc:DocumentDescriptionText></nc:DocumentDescriptionText>
+      <nc:DocumentFileControlID></nc:DocumentFileControlID>
+      <nc:DocumentIdentification>
+        <nc:IdentificationID>3b29e9f4-feba-4c70-ad31-f30c9a37733e</nc:IdentificationID>
+        <nc:IdentificationCategoryText>FILINGID</nc:IdentificationCategoryText>
+      </nc:DocumentIdentification>
+      <nc:DocumentSequenceID>0</nc:DocumentSequenceID>
+      <ecf:DocumentMetadata>
+        <j:RegisterActionDescriptionText>CV10</j:RegisterActionDescriptionText>
+        <ecf:FilingAttorneyID>
+          <nc:IdentificationID>Attorney1</nc:IdentificationID>
+          <nc:IdentificationCategoryText>REFERENCE</nc:IdentificationCategoryText>
+        </ecf:FilingAttorneyID>
+        <ecf:FilingPartyID>
+          <nc:IdentificationID />
+          <nc:IdentificationCategoryText></nc:IdentificationCategoryText>
+        </ecf:FilingPartyID>
+      </ecf:DocumentMetadata>
+      <ecf:DocumentRendition>
+        <ecf:DocumentRenditionMetadata>
+          <ecf:DocumentAttachment>
+            <nc:BinaryBase64Object />
+            <nc:BinaryDescriptionText>Additional Filing.pdf</nc:BinaryDescriptionText>
+            <nc:BinaryFormatStandardName>NONE</nc:BinaryFormatStandardName>
+            <nc:BinaryLocationURI>Additional Filing.pdf</nc:BinaryLocationURI>
+            <nc:BinaryCategoryText>LEAD</nc:BinaryCategoryText>
+            <ecf:AttachmentSequenceID>0</ecf:AttachmentSequenceID>
+          </ecf:DocumentAttachment>
+        </ecf:DocumentRenditionMetadata>
+      </ecf:DocumentRendition>
+      <FilingCommentsText></FilingCommentsText>
+    </FilingLeadDocument>
+  </CoreFilingMessage>
+</RecordFilingRequestMessage>
