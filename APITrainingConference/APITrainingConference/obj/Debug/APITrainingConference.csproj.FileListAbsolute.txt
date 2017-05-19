@@ -1,5 +1,0 @@
-C:\git\JTIAPITrainingConference\APITrainingConference\APITrainingConference\bin\Debug\APITrainingConference.exe.config
-C:\git\JTIAPITrainingConference\APITrainingConference\APITrainingConference\bin\Debug\APITrainingConference.exe
-C:\git\JTIAPITrainingConference\APITrainingConference\APITrainingConference\bin\Debug\APITrainingConference.pdb
-C:\git\JTIAPITrainingConference\APITrainingConference\APITrainingConference\obj\Debug\APITrainingConference.exe
-C:\git\JTIAPITrainingConference\APITrainingConference\APITrainingConference\obj\Debug\APITrainingConference.pdb
