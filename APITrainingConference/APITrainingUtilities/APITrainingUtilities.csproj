@@ -52,10 +52,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Xml\DocumentAttachment.cs" />
     <Compile Include="Logging\ILog.cs" />
     <Compile Include="Logging\LogFactory.cs" />
     <Compile Include="Logging\Serilog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Xml\Case.cs" />
+    <Compile Include="Xml\CaseParticipant.cs" />
+    <Compile Include="Xml\ContactInformation.cs" />
+    <Compile Include="Xml\CoreFilingMessage.cs" />
+    <Compile Include="Xml\DocumentFiledDate.cs" />
+    <Compile Include="Xml\DocumentMetadata.cs" />
+    <Compile Include="Xml\EntityPerson.cs" />
+    <Compile Include="Xml\FilingLeadDocument.cs" />
+    <Compile Include="Xml\Identification.cs" />
+    <Compile Include="Xml\MailingAddress.cs" />
+    <Compile Include="Xml\PersonName.cs" />
+    <Compile Include="Xml\XmlParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

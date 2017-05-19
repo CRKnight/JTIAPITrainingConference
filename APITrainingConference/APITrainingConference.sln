@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APITrainingConference", "AP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APITrainingUtilities", "APITrainingUtilities\APITrainingUtilities.csproj", "{3AD70861-345A-4584-8B0F-D9F5E1F80F9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APITrainingUtilitiesTests", "APITrainingUtilitiesTests\APITrainingUtilitiesTests.csproj", "{14D3A891-D03C-4CDC-9B94-4611A5F5F1B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3AD70861-345A-4584-8B0F-D9F5E1F80F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AD70861-345A-4584-8B0F-D9F5E1F80F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AD70861-345A-4584-8B0F-D9F5E1F80F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14D3A891-D03C-4CDC-9B94-4611A5F5F1B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14D3A891-D03C-4CDC-9B94-4611A5F5F1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14D3A891-D03C-4CDC-9B94-4611A5F5F1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14D3A891-D03C-4CDC-9B94-4611A5F5F1B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
