@@ -11,17 +11,24 @@ namespace APILibrary
 		public void GetClient()
 		{
 			//Create client
+
 			//Add credentials 
 		}
 
 		private void GetName()
 		{
-			//Create Name
+			//Create new Name
+
+			//Set Required Properties
+
+			//Set Operation 
 		}
 
 		private void GetCase()
 		{
-			//Create and Submit 
+			//Create Case
+
+			//Submit 
 		}
 
 		private void GetCourtNumber()
