@@ -32,6 +32,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,6 +44,429 @@
   <ItemGroup>
     <Compile Include="APIWorker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\JustWareAPI\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Account.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.AccountStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.AccountType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Address.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.AddressType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Agency.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.AgencyType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.ApplicationPerson.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Bond.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.BondAmendment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.BondCondition.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.BondConditionType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.BondStatusType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.BondType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CalendarDocket.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Case.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CaseAttribute.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CaseAttributeCodeListType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CaseAttributeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CaseCorrespondence.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CaseDocument.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CaseEvent.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CaseInvolvedName.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CaseNonCollectableFinancial.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CaseNote.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CaseNoteType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CaseRelationship.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CaseStatusHistory.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CaseStatusType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CaseTask.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CaseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CategoryType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Charge.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.ChargeAgency.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.ChargeAttribute.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.ChargeAttributeCodeListType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.ChargeAttributeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.ChargeEnhancement.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.ChargeEnhancementType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.ChargeHistory.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.ChargeHistoryType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.ChargeInvolvedName.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.ChargeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Condition.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.ConditionType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CorrespondenceInvolvedName.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CorrespondenceType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CountyType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CreditSuspend.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.CreditSuspendType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.DispositionType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.DocketInstance.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.DocketInstanceType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.DocumentInvolvedName.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.DocumentType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Email.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.EmailType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.EventInvolvedName.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.EventLocationType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.EventStatusType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.EventType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Exhibit.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.ExhibitStatusType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.ExhibitType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Intoxicant.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.IntoxicantType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.InvolveType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Judgment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.JurisdictionType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.JusticeBrokerMessageQueue.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Key.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Location.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Name.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.NameAttribute.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.NameAttributeCodeListType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.NameAttributeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.NameCorrespondence.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.NameDocument.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.NameEvent.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.NameNonCollectableFinancial.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.NameNote.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.NameNumber.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.NameTask.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.NameType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.NonCasePayment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.NonCasePaymentItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.NonCasePaymentItemType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.NonCollectableFinancialInvolvedName.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.NonCollectableFinancialType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.NumberType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Obligation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.ObligationType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.OnlineDocument.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.OnlineDocumentAuthorizedName.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Payment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.PaymentStatusType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.PaymentType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.PendingTimeTrackingEntry.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Phone.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.PhoneType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.PhysicalLocation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.PhysicalLocationType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.PleaType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.PrimaryNameRelationship.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.RelatedCaseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.RelationshipType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.SecondaryNameRelationship.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Sentence.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.SentenceType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Statute.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.StatuteAttribute.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.StatuteAttributeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.StatuteCategoryType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.StatuteClassType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.StatuteSeverityType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.StatuteText.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.StatuteTextType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.TaskInvolvedName.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.TaskType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.TimeTrackingStatusType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.TimeTrackingType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Transfer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.VerifyInstallResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.Voucher.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.VoucherableAmount.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.VoucherStatusType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\APILibrary.JustWareAPI.VoucherType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JustWareAPI\JustWareApi.wsdl" />
+    <None Include="Service References\JustWareAPI\JustWareApi.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\JustWareAPI\JustWareApi1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\JustWareAPI\JustWareApi2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\JustWareAPI\JustWareApi3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\JustWareAPI\JustWareApi4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\JustWareAPI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\JustWareAPI\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\JustWareAPI\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\JustWareAPI\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
