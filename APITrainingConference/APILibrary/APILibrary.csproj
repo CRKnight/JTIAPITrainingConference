@@ -468,6 +468,12 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\APITrainingUtilities\APITrainingUtilities.csproj">
+      <Project>{3ad70861-345a-4584-8b0f-d9f5e1f80f9c}</Project>
+      <Name>APITrainingUtilities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
