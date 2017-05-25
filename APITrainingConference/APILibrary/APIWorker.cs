@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using APILibrary.JustWareAPI;
 using APITrainingUtilities.Logging;
 using APITrainingUtilities.Xml;
 
