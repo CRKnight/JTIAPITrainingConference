@@ -10,6 +10,10 @@ namespace APILibrary
 	public class APIWorker
 	{
 		const string XML_DIRECTORY_PATH = "C:\\git\\TrainingConference\\JTIAPITrainingConference\\XML\\";
+		private const string AGENCY_ADD_BY_CODE = "";
+		private const string STATUS_CODE = "";
+		private const string ATTOURNEY_CODE = "ATTY";
+		private const string DEFENDANT_CODE = "DEF";
 
 		private readonly ILog _logger = LogFactory.CreateForType<ILog>();
 		private readonly CoreFilingMessage _message = XmlParser.CreateMessage(XML_DIRECTORY_PATH + "APIClass.xml");
@@ -50,5 +54,30 @@ namespace APILibrary
 			_logger.Debug($"Created new name: {name.Last}, {ID.IdentificationID}");
 			return name;
 		}
+		}
+
+		public void SubmitCase()
+		{
+			JustWareAPI.Case newCase = new JustWareAPI.Case();
+			newCase.AgencyAddedByCode = AGENCY_ADD_BY_CODE;
+			newCase.ReceivedDate = DateTime.Now;
+			newCase.StatusDate = _message.DocumentFiledDate.Date;
+			newCase.StatusCode = STATUS_CODE;
+			newCase.CaseInvolvedNames = new List<CaseInvolvedName>();
+			foreach (var name in GetNames())
+			{
+				newCase.CaseInvolvedNames.Add(new CaseInvolvedName() {Name = name});
+			}
+
+			newCase.Operation = OperationType.Insert;
+			try
+			{
+				_client.Submit(newCase);
+
+			}
+			catch (Exception exception)
+			{
+				_logger.Error($"Error Occurred during Case submit: {exception}");
+			}
 	}
 }
