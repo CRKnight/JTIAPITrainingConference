@@ -50,7 +50,5 @@ namespace APILibrary
 			_logger.Debug($"Created new name: {name.Last}, {ID.IdentificationID}");
 			return name;
 		}
-			return names;
-		}
 	}
 }
