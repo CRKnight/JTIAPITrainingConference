@@ -35,5 +35,20 @@ namespace APILibrary
 			int id = _client.GetCallerNameID();
 			_logger.Debug($"Caller Id = {id}");
 		}
+
+		public Name GetName(CaseParticipant caseParticipant)
+		{
+			Identification ID = caseParticipant.EntityPerson.Identifications.FirstOrDefault();
+			Name name = new Name();
+			var entityPerson = caseParticipant.EntityPerson;
+			name = new Name();
+			name.Last = entityPerson.PersonName.PersonSurName;
+			name.First = entityPerson.PersonName.PersonGivenName;
+			name.Middle = entityPerson.PersonName.PersonMiddleName;
+			name.Suffix = entityPerson.PersonName.PersonNameSuffixText;
+			name.Operation = OperationType.Insert;
+			_logger.Debug($"Created new name: {name.Last}, {ID.IdentificationID}");
+			return name;
+		}
 	}
 }
