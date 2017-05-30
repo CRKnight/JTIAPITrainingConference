@@ -13,7 +13,7 @@ namespace TestConsoleApplication
 	{
 		static void Main(string[] args)
 		{
-			APIWorker apiWorker = new APIWorker();
+			APIWorker apiWorker = new APIWorker("Path to the xml");
 			apiWorker.LogXml();
 			Console.ReadLine();
 		}
