@@ -14,9 +14,9 @@ namespace APITrainingConference
 		/// </summary>
 		static void Main()
 		{
-			_logger.Debug("Log file location: {0}", LogFactory.LogFilePath);
+			_logger.Debug("Log file: {LogFilePath}", LogFactory.LogFilePath);
 			CoreFilingMessage sample1 = XmlParser.CreateMessage(SAMPLE_1_PATH);
-			_logger.Information("Processing CaseDocketID: {0}", sample1.Case.CaseDocketID);
+			_logger.Information("Processing: {@Sample1}", sample1);
 			Console.WriteLine("Press enter to exit");
 			Console.ReadLine();
 		}
