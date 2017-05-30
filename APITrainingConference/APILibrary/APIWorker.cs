@@ -54,6 +54,19 @@ namespace APILibrary
 			_logger.Debug($"Created new name: {name.Last}, {ID.IdentificationID}");
 			return name;
 		}
+
+		public List<CaseInvolvedName> GetCaseInvolvments()
+		{
+			List<CaseInvolvedName> involvments = new List<CaseInvolvedName>();
+			CaseParticipant[] casePersons = _message.Case.CaseParticipants;
+			foreach (var caseParticipant in casePersons)
+			{
+				CaseInvolvedName name = new CaseInvolvedName();
+				name.Name = GetName(caseParticipant);
+				name.InvolvementCode = caseParticipant.CaseParticipantRoleCode;
+				involvments.Add(name);
+			}
+			return involvments;
 		}
 
 		public void SubmitCase()
@@ -63,11 +76,7 @@ namespace APILibrary
 			newCase.ReceivedDate = DateTime.Now;
 			newCase.StatusDate = _message.DocumentFiledDate.Date;
 			newCase.StatusCode = STATUS_CODE;
-			newCase.CaseInvolvedNames = new List<CaseInvolvedName>();
-			foreach (var name in GetNames())
-			{
-				newCase.CaseInvolvedNames.Add(new CaseInvolvedName() {Name = name});
-			}
+			newCase.CaseInvolvedNames = GetCaseInvolvments();
 
 			newCase.Operation = OperationType.Insert;
 			try
@@ -79,5 +88,6 @@ namespace APILibrary
 			{
 				_logger.Error($"Error Occurred during Case submit: {exception}");
 			}
+		}
 	}
 }
