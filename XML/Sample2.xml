@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoreFilingMessage>
 	<DocumentFiledDate>
-		<DateTime>2017-01-31T19:48:38.0Z</DateTime>
+		<DateTime>2017-03-21T10:00:38.0Z</DateTime>
 	</DocumentFiledDate>
 	<Case>
-		<CaseDocketID>TSTATTACHMENTS123</CaseDocketID>
+		<CaseDocketID>17-CV-232</CaseDocketID>
 		<CaseTypeText>DCOCO</CaseTypeText>
 		<CaseParticipant>
 			<CaseParticipantRoleCode>PLA</CaseParticipantRoleCode>
 			<EntityPerson>
 				<PersonName>
-					<PersonGivenName>John</PersonGivenName>
+					<PersonGivenName>Mickey</PersonGivenName>
 					<PersonMiddleName/>
-					<PersonSurName>Smith</PersonSurName>
+					<PersonSurName>Mouse</PersonSurName>
 					<PersonNameSuffixText/>
 				</PersonName>
 				<ContactInformation>
-					<TelephoneNumber />
-					<Email />
+					<TelephoneNumber>5555551988</TelephoneNumber>
+					<Email>mmouse@disney.com</Email>
 					<MailingAddress>
-						<LocationStreet />
+						<LocationStreet>500 South Buena Vista Street</LocationStreet>
 						<AddressSecondaryUnitText />
-						<LocationCityName />
-						<LocationStateName />
-						<LocationPostalCode />
+						<LocationCityName>Burbank</LocationCityName>
+						<LocationStateName>CA</LocationStateName>
+						<LocationPostalCode>91521</LocationPostalCode>
 					</MailingAddress>
 				</ContactInformation>
 			</EntityPerson>			
@@ -32,31 +32,31 @@
 			<CaseParticipantRoleCode>DEF</CaseParticipantRoleCode>
 			<EntityPerson>
 				<PersonName>
-					<PersonGivenName>Bill</PersonGivenName>
-					<PersonMiddleName/>
-					<PersonSurName>Smith</PersonSurName>
+					<PersonGivenName>Donald</PersonGivenName>
+					<PersonMiddleName>Fauntleroy</PersonMiddleName>
+					<PersonSurName>Duck</PersonSurName>
 					<PersonNameSuffixText/>
 				</PersonName>
 				<PersonOtherIdentification>
-					<IdentificationID>357ca247-effd-471e-b40e-7edcbae3260a</IdentificationID>
+					<IdentificationID>793f3c08-49cb-47cd-8cde-ae33d417c33f</IdentificationID>
 					<IdentificationCategoryText>CMSID</IdentificationCategoryText>
 				</PersonOtherIdentification>
 				<PersonOtherIdentification>
-					<IdentificationID>a3bcea9b-749e-4f77-907c-0fb6b6e23079</IdentificationID>
+					<IdentificationID>b4be60b1-a0e7-4ff5-b4ab-d51748c2c78f</IdentificationID>
 					<IdentificationCategoryText>CASEPARTYID</IdentificationCategoryText>
 				</PersonOtherIdentification>
 				<ContactInformation>
-					<TelephoneNumber />
-					<Email />
+					<TelephoneNumber>5555550832</TelephoneNumber>
+					<Email>dduck@disney.com</Email>
 					<MailingAddress>
-						<LocationStreet />
+						<LocationStreet>500 South Buena Vista Street</LocationStreet>
 						<AddressSecondaryUnitText />
-						<LocationCityName />
-						<LocationStateName />
-						<LocationPostalCode />
+						<LocationCityName>Burbank</LocationCityName>
+						<LocationStateName>CA</LocationStateName>
+						<LocationPostalCode>91521</LocationPostalCode>
 					</MailingAddress>
 				</ContactInformation>
-			</EntityPerson>				
+			</EntityPerson>
 		</CaseParticipant>
 		<CaseParticipant>
 			<CaseParticipantRoleCode>ATTY</CaseParticipantRoleCode>
@@ -75,14 +75,14 @@
 					<IdentificationCategoryText>BAR</IdentificationCategoryText>
 				</PersonOtherIdentification>
 				<ContactInformation>
-					<TelephoneNumber />
-					<Email />
+					<TelephoneNumber>5555550023</TelephoneNumber>
+					<Email>byoung@notarealaddress.com</Email>
 					<MailingAddress>
-						<LocationStreet />
+						<LocationStreet>96 South Street</LocationStreet>
 						<AddressSecondaryUnitText />
-						<LocationCityName />
-						<LocationStateName />
-						<LocationPostalCode />
+						<LocationCityName>Providence</LocationCityName>
+						<LocationStateName>UT</LocationStateName>
+						<LocationPostalCode>84332</LocationPostalCode>
 					</MailingAddress>
 				</ContactInformation>
 			</EntityPerson>
@@ -90,7 +90,7 @@
 	</Case>
 	<FilingLeadDocument>
 		<DocumentIdentification>
-			<IdentificationID>3b29e9f4-feba-4c70-ad31-f30c9a37733e</IdentificationID>
+			<IdentificationID>3f024524-0797-494d-8261-7a8ab4d3fac6</IdentificationID>
 			<IdentificationCategoryText>FILINGID</IdentificationCategoryText>
 		</DocumentIdentification>
 		<DocumentMetadata>
@@ -102,7 +102,7 @@
 		</DocumentMetadata>
 		<DocumentAttachment>
 			<BinaryDescriptionText>Additional Filing.pdf</BinaryDescriptionText>
-			<BinaryLocationURI>3b29e9f4-feba-4c70-ad31-f30c9a37733e_0.pdf</BinaryLocationURI>
+			<BinaryLocationURI>3f024524-0797-494d-8261-7a8ab4d3fac6_0.pdf</BinaryLocationURI>
 			<BinaryCategoryText>LEAD</BinaryCategoryText>
 		</DocumentAttachment>
 		<FilingCommentsText/>
