@@ -1,5 +1,7 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
+using APITrainingUtilities.Xml;
 using Serilog;
 using Serilog.Core;
 
@@ -21,6 +23,11 @@ namespace APITrainingUtilities.Logging
 		{
 			return new LoggerConfiguration()
 				.MinimumLevel.Verbose()
+				.Destructure.ByTransforming<CoreFilingMessage>(f => new
+				{
+					f.Case.CaseDocketID,
+					Defendant = f.Case.CaseParticipants.SingleOrDefault(p => p.CaseParticipantRoleCode.Equals("DEF", StringComparison.OrdinalIgnoreCase))?.EntityPerson?.PersonName
+				})
 				.WriteTo.LiterateConsole(outputTemplate: "[{Timestamp:HH:mm:ss.ffff}<{SourceContext}>{Level:u3}]{Message}{NewLine}")
 				.WriteTo.RollingFile(
 					outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.ffff(zzz)}<{SourceContext}>[{Level}]{Message}{NewLine}",
