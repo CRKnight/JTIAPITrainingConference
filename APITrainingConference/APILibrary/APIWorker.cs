@@ -20,6 +20,8 @@ namespace APILibrary
 
 		private JustWareApiClient _client;
 
+		private Dictionary<string, Name> _nameCache;
+
 		public APIWorker()
 		{
 			CreateApiClient();
@@ -43,15 +45,79 @@ namespace APILibrary
 		public Name GetName(CaseParticipant caseParticipant)
 		{
 			Identification ID = caseParticipant.EntityPerson.Identifications.FirstOrDefault();
-			Name name = new Name();
+
+			if (_nameCache.ContainsKey(ID.IdentificationID))
+			{
+				_logger.Debug($"Cached Name Used {ID.IdentificationID}");
+				return _nameCache[ID.IdentificationID];
+			}
+
+			Name name = _client.FindNames($"NameAttribute = {ID.IdentificationID}", null).FirstOrDefault();
+			if (name != null)
+			{
+				_logger.Debug($"Found Name through API for {ID.IdentificationID}");
+				return name;
+			}
+
 			var entityPerson = caseParticipant.EntityPerson;
+			var contactInformation = entityPerson.ContactInformation;
+
 			name = new Name();
 			name.Last = entityPerson.PersonName.PersonSurName;
 			name.First = entityPerson.PersonName.PersonGivenName;
 			name.Middle = entityPerson.PersonName.PersonMiddleName;
 			name.Suffix = entityPerson.PersonName.PersonNameSuffixText;
+
+			name.Phones = new List<Phone>();
+			name.Phones.Add(new Phone()
+			{
+				Number = contactInformation.TelephoneNumber,
+				Operation = OperationType.Insert
+			});
+
+			name.Addresses = new List<Address>();
+			name.Addresses.Add(new Address()
+			{
+				StreetAddress =
+					contactInformation.MailingAddress.LocationStreet + contactInformation.MailingAddress.AddressSecondaryUnitText,
+				StateCode = contactInformation.MailingAddress.LocationStateName,
+				City = contactInformation.MailingAddress.LocationCityName,
+				Zip = contactInformation.MailingAddress.LocationPostalCode,
+				Operation = OperationType.Insert
+			});
+
+			name.Emails = new List<Email>();
+			name.Emails.Add(new Email()
+			{
+				Address = contactInformation.Email,
+				Operation = OperationType.Insert
+			});
+
+			name.Numbers = new List<NameNumber>();
+			name.Numbers.Add(new NameNumber()
+			{
+				Number = ID.IdentificationID,
+				Operation = OperationType.Insert
+			});
+
+			name.TempID = "name";
 			name.Operation = OperationType.Insert;
+
+			List<Key> keys;
+			try
+			{
+				keys = _client.Submit(name);
+			}
+			catch (Exception exception)
+			{
+				_logger.Error($"Error submitting Name: {exception.Message}");
+				return null;
+			}
+
 			_logger.Debug($"Created new name: {name.Last}, {ID.IdentificationID}");
+			name.ID = keys.Where(k => name.TempID.Equals(k.TempID)).Select(k => k.NewID).FirstOrDefault();
+			_nameCache.Add(ID.IdentificationID, name);
+
 			return name;
 		}
 
@@ -67,6 +133,11 @@ namespace APILibrary
 				involvments.Add(name);
 			}
 			return involvments;
+		}
+
+		public void Documents()
+		{
+			
 		}
 
 		public void SubmitCase()
@@ -86,7 +157,7 @@ namespace APILibrary
 			}
 			catch (Exception exception)
 			{
-				_logger.Error($"Error Occurred during Case submit: {exception}");
+				_logger.Error($"Error Occurred during Case submit: {exception.Message}");
 			}
 		}
 	}

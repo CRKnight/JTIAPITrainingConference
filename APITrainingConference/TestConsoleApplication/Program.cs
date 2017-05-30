@@ -15,8 +15,6 @@ namespace TestConsoleApplication
 		{
 			APIWorker apiWorker = new APIWorker();
 			apiWorker.LogXml();
-			List<Name> nameList = apiWorker.GetNames();
-			Console.WriteLine($"We got {nameList.Count} names");
 			Console.ReadLine();
 		}
 	}
