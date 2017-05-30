@@ -20,6 +20,7 @@ namespace APITrainingUtilities.Logging
 		private static Logger InitializeLogger()
 		{
 			return new LoggerConfiguration()
+				.MinimumLevel.Verbose()
 				.WriteTo.LiterateConsole(outputTemplate: "[{Timestamp:HH:mm:ss.ffff}<{SourceContext}>{Level:u3}]{Message}{NewLine}")
 				.WriteTo.RollingFile(
 					outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.ffff(zzz)}<{SourceContext}>[{Level}]{Message}{NewLine}",

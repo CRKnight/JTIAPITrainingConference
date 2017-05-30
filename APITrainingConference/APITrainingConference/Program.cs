@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.ServiceProcess;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace APITrainingConference
 {
@@ -14,12 +9,8 @@ namespace APITrainingConference
 		/// </summary>
 		static void Main()
 		{
-			ServiceBase[] ServicesToRun;
-			ServicesToRun = new ServiceBase[]
-			{
-				new XMLToAPIService()
-			};
-			ServiceBase.Run(ServicesToRun);
+			Console.WriteLine("Press enter to exit");
+			Console.ReadLine();
 		}
 	}
 }
