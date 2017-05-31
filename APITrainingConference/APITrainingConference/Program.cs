@@ -20,6 +20,7 @@ namespace APITrainingConference
 			_logger.Information("Processing: {@Sample1}", sample1);
 
 			APIWorker apiWorker = new APIWorker(sample1);
+			apiWorker.GetName(sample1.Case.CaseParticipants[0]);
 
 			Console.WriteLine("Press enter to exit");
 			Console.ReadLine();

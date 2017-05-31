@@ -1,4 +1,5 @@
-﻿using APITrainingUtilities.Logging;
+﻿using System.Collections.Generic;
+using APITrainingUtilities.Logging;
 using APILibrary.JustWareAPI;
 using APITrainingUtilities.Xml;
 
@@ -36,6 +37,22 @@ namespace APILibrary
 			int id = _client.GetCallerNameID();
 			_logger.Debug("Caller Id = {Id}", id);
 		}
+
+		public Name GetName(CaseParticipant caseParticipant)
+		{
+			var entityPerson = caseParticipant.EntityPerson;
+
+			Name name = new Name();
+
+			name.Operation = OperationType.Insert;
+
+			name.Last = entityPerson.PersonName.PersonSurName;
+			name.First = entityPerson.PersonName.PersonGivenName;
+			name.Middle = entityPerson.PersonName.PersonMiddleName;
+			name.Suffix = entityPerson.PersonName.PersonNameSuffixText;
+
+			_logger.Debug("Created new name: {FullName}", name.FullName);
+			return name;
 		}
 	}
 }
