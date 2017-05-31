@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9452fb5c-fe9f-4744-a0cd-50619ba0d99a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://training.journaltech.com/API/JustWareApi.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="JustWareApi.wsdl" MetadataType="Wsdl" ID="b670adb7-5239-4850-9754-c3f24b4d3b34" SourceId="1" SourceUrl="https://training.journaltech.com/API/JustWareApi.svc?wsdl" />
+    <MetadataFile FileName="JustWareApi.xsd" MetadataType="Schema" ID="5ec66e04-db10-4eb4-b095-570f7787a715" SourceId="1" SourceUrl="https://training.journaltech.com/API/JustWareApi.svc?xsd=xsd4" />
+    <MetadataFile FileName="JustWareApi1.xsd" MetadataType="Schema" ID="684722b5-0fd5-4843-8b9f-b94662f0b5d6" SourceId="1" SourceUrl="https://training.journaltech.com/API/JustWareApi.svc?xsd=xsd3" />
+    <MetadataFile FileName="JustWareApi2.xsd" MetadataType="Schema" ID="692709e6-4cc8-4c63-8f7b-69327296894f" SourceId="1" SourceUrl="https://training.journaltech.com/API/JustWareApi.svc?xsd=xsd2" />
+    <MetadataFile FileName="JustWareApi3.xsd" MetadataType="Schema" ID="778ce001-411d-42a7-99e2-e703b2e17a75" SourceId="1" SourceUrl="https://training.journaltech.com/API/JustWareApi.svc?xsd=xsd1" />
+    <MetadataFile FileName="JustWareApi4.xsd" MetadataType="Schema" ID="7ac043f0-7693-43ed-ae22-e6a6445c9e35" SourceId="1" SourceUrl="https://training.journaltech.com/API/JustWareApi.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
