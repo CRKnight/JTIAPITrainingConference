@@ -1,4 +1,5 @@
 ﻿using APITrainingUtilities.Logging;
+using APILibrary.JustWareAPI;
 using APITrainingUtilities.Xml;
 
 namespace APILibrary
@@ -17,10 +18,24 @@ namespace APILibrary
 		private static readonly ILog _logger = LogFactory.CreateForType<APIWorker>();
 		private readonly CoreFilingMessage _message;
 
+		private JustWareApiClient _client;
+
 		public APIWorker(CoreFilingMessage message)
 		{
 			_message = message;
+			CreateApiClient();
 		}
 
+
+		private void CreateApiClient()
+		{
+			_client = new JustWareApiClient();
+			_client.ClientCredentials.UserName.UserName = "tc\\User";
+			_client.ClientCredentials.UserName.Password = "JustWare6";
+
+			int id = _client.GetCallerNameID();
+			_logger.Debug("Caller Id = {Id}", id);
+		}
+		}
 	}
 }
