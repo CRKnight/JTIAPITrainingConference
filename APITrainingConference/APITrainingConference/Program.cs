@@ -19,9 +19,10 @@ namespace APITrainingConference
 			CoreFilingMessage sample1 = XmlParser.CreateMessage(SAMPLE_1_PATH);
 			_logger.Information("Processing: {@Sample1}", sample1);
 
-			APIWorker apiWorker = new APIWorker(sample1);
-			apiWorker.GetName(sample1.Case.CaseParticipants[0]);
+			APIWorker apiWorker = new APIWorker(sample1, "data");
+			apiWorker.SubmitCase();
 
+			_logger.Information("Processing completed");
 			Console.WriteLine("Press enter to exit");
 			Console.ReadLine();
 		}
